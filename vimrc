@@ -48,7 +48,11 @@ let NERDTreeKeepTreeInNewTab=1
 "colors - brilliant :D dont you touch this.
 "
 set background=dark
-"colorscheme wombat
+colorscheme twilight
+
+"open code folds by default
+"
+set foldlevel=20
 
 "remove highlighting on previous search results
 nnoremap <F3> :noh<return><esc>
