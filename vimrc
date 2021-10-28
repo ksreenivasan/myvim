@@ -48,7 +48,7 @@ let NERDTreeKeepTreeInNewTab=1
 "colors - brilliant :D dont you touch this.
 "
 set background=dark
-colorscheme twilight
+colorscheme solarized
 
 "open code folds by default
 "
