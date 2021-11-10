@@ -29,6 +29,7 @@ set softtabstop=4
 "set columns=80
 "don't wrap while typing
 set formatoptions-=t
+set foldlevelstart=99
 
 " Nerdtree
 "autocmd vimenter * NERDTree
@@ -127,10 +128,10 @@ set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10
 let g:airline_powerline_fonts = 1
 
 "If you are in a commit or a blob, pressing C will take you to the commit.
-autocmd User fugitive
-  \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
-  \   nnoremap <buffer> .. :edit %:h<CR> |
-  \ endif
+"autocmd User fugitive
+"  \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
+"  \   nnoremap <buffer> .. :edit %:h<CR> |
+"  \ endif
 "clean up all fugitive buffers as you leave them.
 autocmd BufReadPost fugitive://* set bufhidden=delete
 set t_Co=256
@@ -149,7 +150,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 set tags=~/.mytags
 let g:ctrlp_extensions = ['tag', 'buffertag', ]
 
-set tw=80
+"set tw=80
 set wm=0
 :set colorcolumn=+1        " highlight column after 'textwidth'
 :set colorcolumn=-1,-2,-3  " highlight three columns after 'textwidth'
