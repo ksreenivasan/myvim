@@ -73,7 +73,7 @@ let mapleader = ','
 
 "better clipboard - combined for OS + editor
 "if has ('x') && has ('gui')
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 "endif 
 
 "Fugitive - it should be banned, it's illegal :D !!!
@@ -150,7 +150,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 set tags=~/.mytags
 let g:ctrlp_extensions = ['tag', 'buffertag', ]
 
-"set tw=80
+set tw=80
 set wm=0
 :set colorcolumn=+1        " highlight column after 'textwidth'
 :set colorcolumn=-1,-2,-3  " highlight three columns after 'textwidth'
